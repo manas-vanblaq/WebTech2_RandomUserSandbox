@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Hiring Database</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
 
 <body>
@@ -14,16 +14,17 @@
 
             <div class="visitor-profile">
 
-                <div class="intro">
-                    
-                    <div class="greeting">
+                <div class="profile-banner">
 
+                    <div class="profile-photo">
+                        <img src="/Media/user-placeholder.png" alt="Profile Image" id="user-picture">
                     </div>
 
-                    <div class="name">
+                </div>
 
-                     </div>
-
+                <div class="intro">
+                    <div class="greeting">Welcome Back!</div>
+                    <div class="name" id="user-name">John Doe</div>
                 </div>
 
                 <div class="divider">
@@ -31,28 +32,95 @@
                 </div>
 
                 <div class="details">
+                    <div class="email-title">E-mail:</div>
+                    <div class="user-email" id="user-email">john.doe@example.com</div>
 
+                    <div class="phone-title">Ph. No.:</div>
+                    <div class="user-phone" id="user-phone">011-962-7516</div>
+
+                    <div class="dob-title">DOB:</div>
+                    <div class="user-dob" id="user-dob">01/02/01</div>
+
+                    <div class="gender-title">Gender:</div>
+                    <div class="user-gender" id="user-gender">Male</div>
                 </div>
-            
+
             </div>
-            
+
             <div class="search-bar">
+
+                <div class="search-text">
+                    <h3>SEARCH FOR EMPLOYEES</h3>
+                </div>
+
+                <select name="employee-count" id="employee-count" class="employee-count">
+                    <option value="10">10 Entries</option>
+                    <option value="20">20 Entries</option>
+                    <option value="30">30 Entries</option>
+                </select>
+
+                <div id="search-button" class=" search-button">SEARCH</div>
 
             </div>
 
             <div class="filters">
-
+                <div class="filter-text"> Sort by</div>
+                <div class="filter-alphabetical" id="filter-alphabetical">A to Z</div>
+                <div class="filter-employement" id="filter-employement">Years of Employment</div>
+                <div class="filter-age" id="filter-age">Age</div>
             </div>
 
         </div>
 
         <div class="results">
 
-        </div>
-    </div>
+            <div id="cards">
+                <div class="card">
+                    <div class="top">
+                        <div class="profile-img">
+                            <img src="/Media/user-placeholder.png" alt="Profile Image" id="result-profile">
+                        </div>
 
+                        <div class="first-name">
+                            Roman
+                        </div>
+
+                        <div class="last-name">
+                            Deign
+                        </div>
+
+                        <div class="email-header">E-mail:</div>
+                        <div class="result-email">john.doe@example.com</div>
+
+                        <div class="phone-header">Ph. No.:</div>
+                        <div class="result-phone">011-962-7516</div>
+
+                        <div class="dob-header">DOB:</div>
+                        <div class="result-dob">01/02/01</div>
+
+                    </div>  
+                    <div class="bottom">
+                        <div class="yoe">
+                            <div class="yoe-header">Year of Employment</div>
+                            <div class="result-yoe" id="result-yoe">2015</div>
+                        </div>
+
+                        <div class="years-employed">
+                            <div class="employment-header">Year of Employment</div>
+                            <div class="result-employent">10</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="/JS/script.js"></script>
 
 </body>
 

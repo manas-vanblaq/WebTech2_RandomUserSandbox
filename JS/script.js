@@ -16,4 +16,7 @@ function createVisitorUser(data){
 
     var lastName = data.results[0].name.last;
     $("#userLastName").html(lastName);
+
+    var userEmail = data.results[0].email;
+    $('#userEmail').html(userEmail);
 }

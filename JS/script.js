@@ -33,4 +33,9 @@ function createVisitorUser(data){
 
     dob = day + '/' + month + '/' + year;
     $('#userDob').html(dob);
+
+    var userGender = data.results[0].gender;
+    userGender = userGender.charAt(0).toUpperCase() + userGender.slice(1)
+    $('#userGender').html(userGender);
+
 }

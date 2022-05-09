@@ -37,5 +37,40 @@ function createVisitorUser(data){
     var userGender = data.results[0].gender;
     userGender = userGender.charAt(0).toUpperCase() + userGender.slice(1)
     $('#userGender').html(userGender);
+}
 
+var loadResults = {};
+
+$('.search-button').on("click", function(){
+
+    var noOfResults = $('employeeCount').val();
+
+    var searchURL = 'https://randomuser.me/api/?results=' + noOfResults;
+
+    $.ajax({
+        url: searchURL,
+        dataType: 'json',
+        success: function (data) {
+            loadResults = data;
+            updateResults(data);
+        }
+    });
+});
+
+function updateResults(data){
+    var results = $(".results");
+    results.html("");
+
+    for(var i = 0; i < data.results.length; i++){
+        var cards = $('#cards .card');
+        var card = cards.clone();
+        var img = card.find(".result-profile")
+
+        var newImg = data.results[i].picture.large
+        
+
+        img.attr("src", newImg);
+
+        results.append(card);
+    }
 }

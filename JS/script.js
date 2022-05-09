@@ -7,3 +7,8 @@ $.ajax({
     }
 });
 
+function createVisitorUser(data){
+    var profilePicture = data.results[0].picture.large;
+    $("#userPicture").attr("src", profilePicture);
+
+}

@@ -19,4 +19,18 @@ function createVisitorUser(data){
 
     var userEmail = data.results[0].email;
     $('#userEmail').html(userEmail);
+
+    var phoneNumber = data.results[0].phone;
+    $('#userPhone').html(phoneNumber);
+
+    var dob = data.results[0].dob.date;
+    var i = dob.indexOf("T");
+    var j = dob.splice(0, i);
+    
+    var year = j.splice (2,3);
+    var month = j.splice(5,6)
+    var day = j.splice(8,9);
+
+    dob = day + '/' + month + '/' + year;
+    $('#userDob').html(dob);
 }

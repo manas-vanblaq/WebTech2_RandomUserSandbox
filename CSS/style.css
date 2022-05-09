@@ -216,17 +216,17 @@ body{
 .card{
     background-color: white;
     width: 350px;
-    height: 205px;
+    height: 215px;
     box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.25) ;
     display: grid;
-    grid-template-rows: 130px 75px;
+    grid-template-rows: 140px 75px;
 }
 
 .top{
     grid-row: 1/2;
     display: grid;
-    grid-template-rows: 25px 59px 17px 17px 12px;
-    grid-template-columns: 150px 45px 155px;
+    grid-template-rows: 25px 39px 10px 17px 10px 17px 10px 12px;
+    grid-template-columns: 150px 200px;
 }
 
 .profile-img{
@@ -236,8 +236,8 @@ body{
 }
 
 #result-profile{
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
 }
 
 .first-name{
@@ -257,47 +257,47 @@ body{
     font-weight:600;
     color: #1aa0de;
     padding-top: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .email-header{
     grid-row: 3/4;
     grid-column: 2/3;
-    font-size: 12px;
-    padding-bottom: 5px;
+    font-size: 8px;
+    padding-bottom: 2px;
 }
 
 .result-email{
-    grid-row: 3/4;
-    grid-column: 3/4;
+    grid-row: 4/5;
+    grid-column: 2/3;
     font-size: 12px;
     padding-bottom: 5px;
 }
 
 .phone-header{
-    grid-row: 4/5;
+    grid-row: 5/6;
     grid-column: 2/3;
-    font-size: 12px;
-    padding-bottom: 5px;
+    font-size: 8px;
+    padding-bottom: 2px;
 }
 
 .result-phone{
-    grid-row: 4/5;
-    grid-column: 3/4;
+    grid-row: 6/7;
+    grid-column: 2/3;
     font-size: 12px;
     padding-bottom: 5px;
 }
 
 .dob-header{
-    grid-row: 5/6;
+    grid-row: 7/8;
     grid-column: 2/3;
-    font-size: 12px;
-    padding-bottom: 5px;
+    font-size: 8px;
+    padding-bottom: 2px;
 }
 
 .result-dob{
-    grid-row: 5/6;
-    grid-column: 3/4;
+    grid-row: 8/9;
+    grid-column: 2/3;
     font-size: 12px;
 }
 
@@ -306,7 +306,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #1aa0de;
-    margin-top: 15px;
+    margin-top: 10px;
     height: 75px;
 }
 

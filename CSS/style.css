@@ -226,7 +226,7 @@ body{
     grid-row: 1/2;
     display: grid;
     grid-template-rows: 25px 59px 17px 17px 12px;
-    grid-template-columns: 150px 50px 150px;
+    grid-template-columns: 150px 45px 155px;
 }
 
 .profile-img{

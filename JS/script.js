@@ -108,3 +108,33 @@ function updateResults(data){
         results.append(card);
     }
 }
+
+function sortAlphabetical() {
+    
+    let loadResultsCopy = {...loadResults};
+    loadResultsCopy.results.sort((a, b) => a.name.first.localeCompare(b.name.first))
+ 
+    updateResults(loadResultsCopy);
+}
+
+$('#filterAlphabetical').on('click', sortAlphabetical);
+
+function sortYearsEmployed(){
+        
+    let loadResultsCopy = {...loadResults};
+    loadResultsCopy.results.sort((a, b) => b.registered.date.localeCompare(a.registered.date))
+ 
+    updateResults(loadResultsCopy);
+}
+
+$('#filterEmployement').on('click', sortYearsEmployed);
+
+function sortAge(){
+        
+    let loadResultsCopy = {...loadResults};
+    loadResultsCopy.results.sort((a, b) => b.dob.date.localeCompare(a.dob.date))
+ 
+    updateResults(loadResultsCopy);
+}
+
+$('#filterAge').on('click', sortAge);

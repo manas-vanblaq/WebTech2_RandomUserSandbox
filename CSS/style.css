@@ -33,9 +33,10 @@ body{
     padding: 25px;
 }
 
-#user-picture{
+#userPicture{
     width: 250px;
     height: 250px;
+    border-radius: 125px;
 }
 
 .intro{

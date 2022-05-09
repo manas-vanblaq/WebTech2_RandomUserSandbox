@@ -87,6 +87,7 @@ body{
     padding: 0;
 }
 
+
 .filler{
     grid-column: 1/2;
     height: 50px;
@@ -126,6 +127,10 @@ body{
     font-size: 24px;
     font-weight: 500;
     border-radius: 0 20px 20px 0;
+}
+
+.search-button:hover{
+    background-color: #1aa0de;
 }
 
 .filters{
@@ -348,3 +353,6 @@ body{
     padding-top: 5px;
 }
 
+#cards{
+    display: none;
+}

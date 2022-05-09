@@ -25,11 +25,11 @@ function createVisitorUser(data){
 
     var dob = data.results[0].dob.date;
     var i = dob.indexOf("T");
-    var j = dob.splice(0, i);
+    var j = dob.slice(0, i);
     
-    var year = j.splice (2,3);
-    var month = j.splice(5,6)
-    var day = j.splice(8,9);
+    var year = j.slice (2,4);
+    var month = j.slice(5,7)
+    var day = j.slice(8,10);
 
     dob = day + '/' + month + '/' + year;
     $('#userDob').html(dob);
